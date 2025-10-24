@@ -1,0 +1,28 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 12px 0;
+}
+
+.svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 40;
+  background: var(--card);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+  pointer-events: none;
+  border: 1px solid rgba(255,255,255,0.04);
+}
