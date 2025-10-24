@@ -34,7 +34,7 @@ export default function Histogram({ data }: Props) {
           return (
             <g key={i}>
               <line x1={padding.left} x2={width - padding.right} y1={y} y2={y} stroke='rgba(255,255,255,0.03)' />
-              <text x={8} y={y + 4} fontSize={10} fill='var(--muted)'>
+              <text x={8} y={y + 4} fontSize={8} fill='var(--muted)'>
                 {val}
               </text>
             </g>
@@ -67,7 +67,7 @@ export default function Histogram({ data }: Props) {
               />
               {/* x label */}
               {i % Math.ceil(Math.max(1, bars.length / 12)) === 0 && (
-                <text x={x + barW / 2} y={height - 6} fontSize={10} fill='var(--muted)' textAnchor='middle'>
+                <text x={x + barW / 2} y={height - 6} fontSize={8} fill='var(--muted)' textAnchor='middle'>
                   {b.label.slice(11)} {/* show only hh:mm */}
                 </text>
               )}
