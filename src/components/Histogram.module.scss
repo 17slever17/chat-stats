@@ -12,6 +12,10 @@
   border-radius: 10px;
   background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
   border: 1px solid rgba(255,255,255,0.04);
+  
+  g > rect:hover {
+    fill: #505cdf !important;
+  }
 }
 
 .tooltip {
